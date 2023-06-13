@@ -4,6 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import CartWidget from './CartWidget';
+import {Link} from 'react-router-dom';
 
 
 const NavBar =()=> {
@@ -11,17 +12,16 @@ const NavBar =()=> {
     
     <Navbar bg="light" expand="lg" >
       <Container>
-        <Navbar.Brand href="#home">Los Ramones Respuestos</Navbar.Brand>
+     <Navbar.Brand href="/">Los Ramones Respuestos</Navbar.Brand> 
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="CartWidGet">Inicio</Nav.Link>
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Neumaticos</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Iluminacion
+              <NavDropdown.Item ><Link to="/category/Neumaticos">Neumaticos</Link></NavDropdown.Item>
+              <NavDropdown.Item ><Link to="/category/Iluminacion">Iluminacion</Link>
+                
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Suspencion y Frenos</NavDropdown.Item>
+              <NavDropdown.Item ><Link to="/category/Supencion y Frenos">Suspencion y Frenos</Link></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Soporte Tecnico

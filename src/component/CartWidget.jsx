@@ -8,6 +8,7 @@ return(
     <div>
        <FontAwesomeIcon icon={faCartShopping} />
        <span>88</span>
+       
     </div>
 )
 

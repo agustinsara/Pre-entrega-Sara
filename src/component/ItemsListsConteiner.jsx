@@ -1,10 +1,22 @@
 import React from "react";
+import { ProductsCard } from "./ProductsCard";
+import { ProductsData } from "../json/Products";
 
-const ItemsListsConteiner =({greeting})=>{
+const ItemsListsConteiner =({categoryProducts})=>{
 
 return(
-    <div style={{color:"red" , alignItems:"center",display:"flex" , justifyContent:"center"}}>{greeting}</div>
-);
+<div>
+    {
+        ProductsData.map(product => {
+            return(
+              <ProductsCard key={product.id} productData={product}/>            )
+        })
+    }
+</div>
+
+)
+    
+   
 
 
 }
