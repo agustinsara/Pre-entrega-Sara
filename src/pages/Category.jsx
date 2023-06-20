@@ -4,8 +4,10 @@ import {useParams} from "react-router-dom";
 import { ProductsData } from '../json/Products';
 export default function Category() {
     const {id} = useParams()
-    const productsFilterdByCategory = ProductsData.filter(product=>product.id === id);
-  return (
-<div><ItemsListsConteiner categoryProducts={productsFilterdByCategory}/></div>
-  )
+    
+    const productsFilterdByCategory = ProductsData.filter(product=>product.category === id);
+     console.log(productsFilterdByCategory)
+    return (
+  <div><ItemsListsConteiner categoryProducts={productsFilterdByCategory}/></div>)
+  
 }

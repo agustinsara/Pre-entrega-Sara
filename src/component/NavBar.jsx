@@ -17,11 +17,11 @@ const NavBar =()=> {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <NavDropdown title="Categorias" id="basic-nav-dropdown">
-              <NavDropdown.Item ><Link to="/category/Neumaticos">Neumaticos</Link></NavDropdown.Item>
-              <NavDropdown.Item ><Link to="/category/Iluminacion">Iluminacion</Link>
+              <NavDropdown.Item ><Link to="/category/neumaticos">Neumaticos</Link></NavDropdown.Item>
+              <NavDropdown.Item ><Link to="/category/iluminacion">Iluminacion</Link>
                 
               </NavDropdown.Item>
-              <NavDropdown.Item ><Link to="/category/Supencion y Frenos">Suspencion y Frenos</Link></NavDropdown.Item>
+              <NavDropdown.Item ><Link to="/category/suspencion-frenos">Suspencion y Frenos</Link></NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Soporte Tecnico

@@ -2,13 +2,16 @@ import React from "react";
 import { ProductsCard } from "./ProductsCard";
 import { ProductsData } from "../json/Products";
 
-const ItemsListsConteiner =({categoryProducts})=>{
 
+const ItemsListsConteiner =({categoryProducts})=>{
+const productsToShow = categoryProducts ? categoryProducts : ProductsData ;
 return(
 <div>
+     
     {
-        ProductsData.map(product => {
+        productsToShow.map(product => {
             return(
+
               <ProductsCard key={product.id} productData={product}/>            )
         })
     }

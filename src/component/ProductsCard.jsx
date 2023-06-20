@@ -1,13 +1,12 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 export const ProductsCard = ({productData}) => {
   return (
-    <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">{productData.name}</h5>
-    <p class="card-text">{productData.decription}</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+    <div className="card">
+      <div className="card-body">
+        <h5 className="card-title">{productData.name}</h5>
+        <Link to={`/item/${productData.id}`} className="btn btn-primary">Ir al Producto</Link>
+      </div>
+    </div>
   )
 }
